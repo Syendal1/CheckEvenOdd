@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CheckEvenOdd" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="retro backgruond03" translatesAutoresizingMaskIntoConstraints="NO" id="hXo-1g-Nau">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Number to check!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fvA-DA-05R">
+                                <rect key="frame" x="191" y="223" width="247" height="30"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="25"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Number-Checker" translatesAutoresizingMaskIntoConstraints="NO" id="p9g-KD-miA">
+                                <rect key="frame" x="179" y="28" width="271" height="151"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="151" id="HQ2-dI-x6w"/>
+                                    <constraint firstAttribute="width" constant="271" id="UtP-Yc-Xt1"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xDh-aG-low">
+                                <rect key="frame" x="223" y="347" width="182" height="64"/>
+                                <state key="normal" image="checkbutton"/>
+                                <connections>
+                                    <action selector="numChecker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="keB-ZG-7z5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Result" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0qz-yw-yLS">
+                                <rect key="frame" x="230" y="460" width="170" height="70"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="highlightedColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0qz-yw-yLS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="00T-03-ehP"/>
+                            <constraint firstItem="hXo-1g-Nau" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="6Ym-7I-ELs"/>
+                            <constraint firstItem="p9g-KD-miA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BTP-cC-p21"/>
+                            <constraint firstItem="p9g-KD-miA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="BcA-3C-3SM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hXo-1g-Nau" secondAttribute="bottom" id="IiX-Bn-XGg"/>
+                            <constraint firstItem="fvA-DA-05R" firstAttribute="top" secondItem="p9g-KD-miA" secondAttribute="bottom" constant="44" id="Jny-YN-3hi"/>
+                            <constraint firstItem="xDh-aG-low" firstAttribute="top" secondItem="fvA-DA-05R" secondAttribute="bottom" constant="94" id="RAh-Qu-nZx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0qz-yw-yLS" secondAttribute="bottom" constant="70" id="Zlm-gx-Z9p"/>
+                            <constraint firstItem="xDh-aG-low" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aFH-g0-oCh"/>
+                            <constraint firstItem="0qz-yw-yLS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="btM-dV-Dyd"/>
+                            <constraint firstAttribute="trailing" secondItem="hXo-1g-Nau" secondAttribute="trailing" id="cZE-lH-BOE"/>
+                            <constraint firstItem="hXo-1g-Nau" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="d5N-G6-RHe"/>
+                            <constraint firstAttribute="trailing" secondItem="0qz-yw-yLS" secondAttribute="trailing" id="ehx-bA-oCL"/>
+                            <constraint firstItem="fvA-DA-05R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="g8R-uy-2KY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgImage" destination="hXo-1g-Nau" id="CT2-Hr-9Bk"/>
+                        <outlet property="checkBtn" destination="xDh-aG-low" id="YpX-WG-DTy"/>
+                        <outlet property="numField" destination="fvA-DA-05R" id="59g-S4-axo"/>
+                        <outlet property="numberChkImg" destination="p9g-KD-miA" id="axk-Om-LeS"/>
+                        <outlet property="result" destination="0qz-yw-yLS" id="zUQ-4N-OT4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="305"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Number-Checker" width="806" height="96"/>
+        <image name="checkbutton" width="128" height="64"/>
+        <image name="retro backgruond03" width="1667" height="1667"/>
+    </resources>
+</document>
